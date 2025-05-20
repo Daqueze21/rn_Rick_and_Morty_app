@@ -1,4 +1,4 @@
-const COLORS = {
+export const COLORS = {
   white: '#FFFFFF',
   primary: '#030014',
   secondary: '#151312',
@@ -8,4 +8,7 @@ const COLORS = {
   borderIndigo: '#4338ca',
 };
 
-export default COLORS;
+export enum THEMES{
+  light = "light",
+  dark = "dark"
+}

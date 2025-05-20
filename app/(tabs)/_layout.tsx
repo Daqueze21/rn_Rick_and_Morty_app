@@ -1,6 +1,6 @@
-import { TabIcon } from '@/components';
-import COLORS from '@/constants/colors';
-import { TABS_DATA } from '@/constants/routes';
+import { TabIcon } from '@/src/components';
+import { COLORS } from '@/src/constants/colors';
+import { TABS_DATA } from '@/src/constants/routes';
 import { Tabs } from 'expo-router';
 import React from 'react';
 

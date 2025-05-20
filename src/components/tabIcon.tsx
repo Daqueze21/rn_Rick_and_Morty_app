@@ -1,5 +1,5 @@
-import COLORS from '@/constants/colors';
-import { TAB_TITLES } from '@/constants/routes';
+import { COLORS } from '@/src/constants/colors';
+import { TAB_TITLES } from '@/src/constants/routes';
 import React from 'react';
 import { Image, ImageSourcePropType, Text, View } from 'react-native';
 
