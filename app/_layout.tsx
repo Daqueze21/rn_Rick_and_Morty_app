@@ -10,7 +10,7 @@ import './global.css';
 export default function RootLayout() {
   const { colorScheme, setColorScheme } = useColorScheme();
   const [prevThemeValue] = useAsyncStorage<THEMES|null>('themeValue', null);
-  
+
   useEffect(() => {
     if (prevThemeValue !== colorScheme && prevThemeValue !== null) {
       setColorScheme(prevThemeValue);

@@ -7,7 +7,7 @@ import { ScreenHeader } from '../../src/components/screenHeader';
 
 const Settings = () => {
   const { colorScheme, setColorScheme } = useColorScheme();
-  const [theme, setThemeValue] = useAsyncStorage<THEMES | null>(
+  const [, setThemeValue] = useAsyncStorage<THEMES | null>(
     'themeValue',
     null
   );
