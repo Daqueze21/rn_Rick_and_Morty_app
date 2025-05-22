@@ -23,7 +23,7 @@ export function useAsyncStorage<T>(key: string, initialValue: T) {
       }
     };
     loadValue();
-  }, [key]);
+  }, [initialValue, key]);
 
   // Save property to AsyncStorage
   const setValue = useCallback(

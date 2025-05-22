@@ -7,9 +7,9 @@ import { ScreenHeader } from '../../src/components/screenHeader';
 
 const Settings = () => {
   const { colorScheme, setColorScheme } = useColorScheme();
-  const [, setThemeValue] = useAsyncStorage<THEMES>(
+  const [theme, setThemeValue] = useAsyncStorage<THEMES | null>(
     'themeValue',
-    THEMES.dark
+    null
   );
 
   useEffect(() => {
@@ -25,9 +25,11 @@ const Settings = () => {
           Dark mode
         </Text>
         <Switch
-          value={colorScheme === 'dark'}
+          value={colorScheme === THEMES.dark}
           onChange={() =>
-            setColorScheme(colorScheme === 'light' ? 'dark' : 'light')
+            setColorScheme(
+              colorScheme === THEMES.dark ? THEMES.light : THEMES.dark
+            )
           }
         />
       </View>

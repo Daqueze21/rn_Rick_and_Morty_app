@@ -15,7 +15,7 @@ export const TabIcon = ({ title, icon, focused }: TabIconProps) => {
       <Image
         source={icon}
         tintColor={focused ? COLORS.white : COLORS.lightTextGray}
-        className='size-7'
+        className='size-6'
       />
       <Text
         className={`${
